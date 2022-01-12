@@ -59,6 +59,7 @@
     "yargs": "^17.0.1"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.9.2",
     "anchor-js": "^4.3.1",
@@ -70,7 +71,7 @@
     "isotope-layout": "^3.0.6",
     "isotope-packery": "^2.0.1",
     "lodash": "^4.17.21",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.26.0",
     "rellax": "^1.12.1",
     "swiper": "^6.6.2"
   },

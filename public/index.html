@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+
+  <script>
+    (function () {
+      emailjs.init("user_dKPvsHBVzR0LTSI7idqmC");
+      // Obtain your user ID at the dashboard https://dashboard.emailjs.com/integration
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_6zylydd', 'template_h1z430l', this)
+          .then(function () {
+            Swa
+            window.location.reload();
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
 
 
-  <!-- ===============================================-->
+  <!-- =============================================== -->
   <!--    Document Title-->
-  <!-- ===============================================-->
+  <!-- =============================================== -->
   <title>ooForms</title>
 
 
@@ -84,38 +108,52 @@
             <div class="card card-bg shadow hero-header-form">
               <div class="card-body p-4 p-xl-6">
                 <h2 class="text-100 text-center">Contact Us</h2>
-                <form class="mb-3">
+                <form class="mb-3" id="contact-form">
                   <div class="form-floating mb-3">
-                    <input class="form-control input-box form-ensurance-header-control" id="floatingName" type="text"
-                      placeholder="name" />
-                    <label for="floatingName">Your name</label>
+                    <input required name="full_name" class="form-control input-box form-ensurance-header-control"
+                      id="floatingName" type="text" placeholder="name" />
+                    <label for="floatingName">Your full name</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input class="form-control input-box form-ensurance-header-control" id="floatingPhone" type="tel"
-                      placeholder="name@example.com" />
+                    <input required name='phone_number' class="form-control input-box form-ensurance-header-control"
+                      id="floatingPhone" type="number" placeholder="name@example.com" />
                     <label for="floatingPhone">Phone</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input class="form-control input-box form-ensurance-header-control" id="floatingEmail" type="email"
-                      placeholder="name@example.com" />
+                    <input required name='to_email' class="form-control input-box form-ensurance-header-control"
+                      id="floatingEmail" type="email" placeholder="name@example.com" />
                     <label for="floatingEmail">Email</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input class="form-control input-box form-ensurance-header-control" id="floatingCatrgory"
-                      type="text" placeholder="Insurance Category" />
-                    <label for="floatingCatrgory">Insurance Category</label>
+                    <select required name='service' class="form-control input-box form-ensurance-header-control"
+                      id="floatingCatrgory">
+                      <option value="Dispatching">Dispatching</option>
+                      <option value="Carrier Packet">Carrier Packet</option>
+                    </select>
+                    <label for="floatingCatrgory">Contacting about ... </label>
                   </div>
                   <div class="form-floating mb-3">
-                    <textarea class="form-control input-box form-ensurance-header-control" id="floatingTextarea"
+                    <textarea name="message" class="form-control input-box form-ensurance-header-control"
                       placeholder="Leave a comment here"></textarea>
                     <label for="floatingTextarea">Comments</label>
                   </div>
                   <div class="col-12 d-grid">
-                    <button class="btn btn-primary rounded-pill" type="submit">Learn more</button>
+                    <button value="Send" class="btn btn-primary rounded-pill" type="submit">Learn more</button>
+                    <!-- <input type="submit" value="Send"> -->
                   </div>
                 </form>
               </div>
             </div>
+            <!-- <form id="contact-form">
+              <input type="hidden" name="contact_number">
+              <label>Name</label>
+              <input type="text" name="user_name">
+              <label>Email</label>
+              <input type="email" name="user_email">
+              <label>Message</label>
+              <textarea name="message"></textarea>
+              
+          </form> -->
           </div>
         </div>
       </div>
