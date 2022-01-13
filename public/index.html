@@ -21,8 +21,8 @@
         // these IDs from the previous steps
         emailjs.sendForm('service_6zylydd', 'template_h1z430l', this)
           .then(function () {
-            Swa
-            window.location.reload();
+            alert("Success")
+            // window.location.reload();
           }, function (error) {
             console.log('FAILED...', error);
           });
@@ -75,11 +75,11 @@
           aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse pt-4 pt-lg-0" id="navbarSupportedContent">
           <p class="mb-0 ms-auto text-light fs-0 fw-normal"><i class="fas fa-phone-alt me-2"></i>Call Us Now <a
-              class="text-light" href="tel:+604-680-9785">+215(362)4579</a></p>
+              class="text-light" href="tel:+1 281 501 1925">+1 281 501 1925</a></p>
           <ul class="navbar-nav ms-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
             <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
             <li class="nav-item px-2"><a class="nav-link" href="#products">Services</a></li>
-            <li class="nav-item px-2"><a class="nav-link" href="#news">News &amp; Blogs</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="#testimonials">Testimonials</a></li>
             <li class="nav-item px-2"><a class="nav-link" href="#contact">Newsletter</a></li>
           </ul>
         </div>
@@ -127,8 +127,8 @@
                   <div class="form-floating mb-3">
                     <select required name='service' class="form-control input-box form-ensurance-header-control"
                       id="floatingCatrgory">
-                      <option value="Dispatching">Dispatching</option>
                       <option value="Carrier Packet">Carrier Packet</option>
+                      <option value="Dispatching">Dispatching</option>
                     </select>
                     <label for="floatingCatrgory">Contacting about ... </label>
                   </div>
@@ -139,21 +139,11 @@
                   </div>
                   <div class="col-12 d-grid">
                     <button value="Send" class="btn btn-primary rounded-pill" type="submit">Learn more</button>
-                    <!-- <input type="submit" value="Send"> -->
                   </div>
                 </form>
               </div>
             </div>
-            <!-- <form id="contact-form">
-              <input type="hidden" name="contact_number">
-              <label>Name</label>
-              <input type="text" name="user_name">
-              <label>Email</label>
-              <input type="email" name="user_email">
-              <label>Message</label>
-              <textarea name="message"></textarea>
-              
-          </form> -->
+
           </div>
         </div>
       </div>
@@ -194,17 +184,17 @@
               <div class="tab-content w-100" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-car" role="tabpanel" aria-labelledby="nav-car-tab">
                   <div class="row align-items-center offset-sm-1 g-3">
-                    <div class="col-md-6 col-xl-4 order-1 order-md-0">
-                      <h1 class="text-light mb-md-6">Carrier Packets</h1>
+                    <div class="col-md-6 col-xl-5 order-1 order-md-0">
+                      <h1 class="text-light mb-md-3">Carrier Packets</h1>
                       <p class="text-400">Worry no more about Carrier Packets! We are available to help you fill out
                         Carrier Packets from 6 am to 6 pm Central Standard Time. Our promise to you as our customers is
                         fast and reliable service.
 
                       </p>
                       <p class="text-400 mt-3"> We only charge $100 for a truck. Register here to learn more. We have
-                        huge discounts for companies with more than two trucks. Register now to get a quote.</p>
+                        huge discounts for companies with more than two trucks. Register now to learn more and get a quote.</p>
                     </div>
-                    <div class="col-md-6 col-xl-8 text-end">
+                    <div class="col-md-6 col-xl-7 text-end">
                       <div class="img-shape"><img class="feature-img" src="assets/img/gallery/car.png" alt="..." />
                       </div>
                     </div>
@@ -212,14 +202,19 @@
                 </div>
                 <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                   <div class="row align-items-center offset-sm-1 g-3">
-                    <div class="col-md-6 col-xl-4 order-1 order-md-0">
-                      <h1 class="text-light mb-md-6">Dispatching</h1>
-                      <p class="text-400">Make a plan for the emergence of life. We protect your most precious assets,
-                        allowing you to devote your time and energy to more essential things in life.</p>
-                      <p class="text-400 mt-3">Discover the most appropriate fit for you and your Family.</p>
+                    <div class="col-md-6 col-xl-5 order-1 order-md-0">
+                      <h1 class="text-light mb-md-3">Dispatching</h1>
+                      <p class="text-400">The trucking business requires a lot of investment. It requires both monetary
+                        and energy investment. If you're this invested in any business, you need to earn as much as
+                        possible. We will make this possible for you.
+
+                      </p>
+                      <p class="text-400 mt-3">We will preplan a fit route for you and work hard to get you the best
+                        rates. We start dispatching at 6 am CST to book you loads with the best rates. We only charge 5%
+                        Register now to learn more and get a quote.</p>
 
                     </div>
-                    <div class="col-md-6 col-xl-8 text-end">
+                    <div class="col-md-6 col-xl-7 text-end">
                       <div class="img-shape"><img class="feature-img" src="assets/img/gallery/home.png" alt="..." />
                       </div>
                     </div>
@@ -265,7 +260,7 @@
 
     <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <section class="py-8">
+    <section id="testimonials" class="py-8">
 
       <div class="container-fluid px-0">
         <div class="row g-0">
@@ -284,11 +279,11 @@
                                   alt="" /></div>
                             </div>
                             <div class="mt-n6 mt-md-0 text-center text-md-start px-md-6 px-xl-8 px-xxl-10">
-                              <h4 class="mb-0 fw-medium text-white">Charlize Theron</h4>
-                              <p class="fw-normal mb-0 text-primary">Founder Circle</p>
-                              <p class="card-text text-200 mt-3">“Our dedicated patient engagement app and web portal
-                                allow you to access information instantaneously (no tedeous form, long calls, or
-                                administrative hassle) and securely”</p>
+                              <h4 class="mb-0 fw-medium text-white">Alexis McCarty</h4>
+                              <p class="fw-normal mb-0 text-primary">Kings Trucking Enterprises LLC - Dispatcher</p>
+                              <p class="card-text text-200 mt-3">“My team with ooforms is great! Very fast, friendly and
+                                they get the job done. They go above and beyond. I am glad I found them to help me. They
+                                definitely make things a lot easier for me as a dispatcher.”</p>
                             </div>
                           </div>
                         </div>
@@ -307,11 +302,13 @@
                                   alt="" /></div>
                             </div>
                             <div class="mt-n6 mt-md-0 text-center text-md-start px-md-6 px-xl-8 px-xxl-10">
-                              <h4 class="mb-0 fw-medium text-white">Edward Newgate</h4>
-                              <p class="fw-normal mb-0 text-primary">Founder Circle</p>
-                              <p class="card-text text-200 mt-3">“Our dedicated patient engagement app and web portal
-                                allow you to access information instantaneously (no tedeous form, long calls, or
-                                administrative hassle) and securely”</p>
+                              <h4 class="mb-0 fw-medium text-white">Issac Eguaebor</h4>
+                              <p class="fw-normal mb-0 text-primary">BarNone Logistics LLC - Owner</p>
+                              <p class="card-text text-200 mt-3">“I love these folks right here. Kristen, Robel, and
+                                Lucid they are no joke they finish your packets fast and on time. If you are getting
+                                into the trucking business starting up. I highly recommend using them they will save you
+                                a headache and frustration! I don’t know what to say, But my team is hard! Don’t sleep
+                                on these guys!”</p>
                             </div>
                           </div>
                         </div>
@@ -330,11 +327,13 @@
                                   alt="" /></div>
                             </div>
                             <div class="mt-n6 mt-md-0 text-center text-md-start px-md-6 px-xl-8 px-xxl-10">
-                              <h4 class="mb-0 fw-medium text-white">Charlize Theron</h4>
-                              <p class="fw-normal mb-0 text-primary">Founder Circle</p>
-                              <p class="card-text text-200 mt-3">“Our dedicated patient engagement app and web portal
-                                allow you to access information instantaneously (no tedeous form, long calls, or
-                                administrative hassle) and securely”</p>
+                              <h4 class="mb-0 fw-medium text-white">Mark Shankle</h4>
+                              <p class="fw-normal mb-0 text-primary">On Your Mark Trucking LLC - Owner</p>
+                              <p class="card-text text-200 mt-3">“Absolutely Amazing Service!!!!! I'd give them 10 stars
+                                if I could. I've been dealing with OO Forms for about a year now. Takes away the stress
+                                and headache of having to fill out carrier packets when im on the road. Great for
+                                Owner-Operators, or any company/individual that deals with multiple carrier setups on a
+                                weekly basis.”</p>
                             </div>
                           </div>
                         </div>
@@ -369,139 +368,25 @@
 
     </section>
     <!-- <section> close ============================-->
-    <!-- ============================================-->
 
-
-
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section id="news">
-
-      <div class="container">
-        <div class="row">
-          <h2 class="text-light text-center my-5">Recent News</h2>
-        </div>
-        <div class="row flex-center h-100 circle-blend circle-blend-left circle-primary">
-          <div class="col-12">
-            <div class="row align-items-center circle-blend circle-blend-right circle-warning">
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card p-3 h-100 card-soft-primary">
-                  <div class="card-body">
-                    <div class="d-flex flex-between-center">
-                      <p class="fw-normal mb-0 text-400">24 July, 2021</p>
-                      <h6><span class="badge rounded-pill text-primary" style="background:#224E8F;">Thoughts</span></h6>
-                    </div>
-                    <h5 class="fw-bold fs-2 text-200 my-3">A pandemic may cause life insurance coverage</h5>
-                    <p class="text-400">In the aftermath of the Covid epidemic, life insurance firms have been more
-                      cautious and have tightened underwriting standards for policies with large cash values.......</p>
-                    <a class="link-primary" href="#!">
-                      <svg class="bi bi-arrow-right text-primary" xmlns="http://www.w3.org/2000/svg" width="21"
-                        height="21" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-                        </path>
-                      </svg></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card p-3 h-100 card-soft-primary">
-                  <div class="card-body">
-                    <div class="d-flex flex-between-center">
-                      <p class="fw-normal mb-0 text-400">29 July, 2021</p>
-                      <h6><span class="badge rounded-pill text-primary" style="background:#224E8F;">Health</span></h6>
-                    </div>
-                    <h5 class="fw-bold fs-2 text-200 my-3">Top 10 health insurance companies in the Germany</h5>
-                    <p class="text-400">There are numerous private healthcare insurance experts in Germany. Insurance
-                      protects against financial loss and reduces uncertainty. It ensures safety and security.......</p>
-                    <a class="link-primary" href="#!">
-                      <svg class="bi bi-arrow-right text-primary" xmlns="http://www.w3.org/2000/svg" width="21"
-                        height="21" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-                        </path>
-                      </svg></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card p-3 h-100 card-soft-primary">
-                  <div class="card-body">
-                    <div class="d-flex flex-between-center">
-                      <p class="fw-normal mb-0 text-400">15 August, 2021</p>
-                      <h6><span class="badge rounded-pill text-primary" style="background:#224E8F;">Life</span></h6>
-                    </div>
-                    <h5 class="fw-bold fs-2 text-200 my-3">Why do you need several life insurance policies?</h5>
-                    <p class="text-400">In the event of the insured's death, life insurance protects the nominees
-                      financially. It is possible to have several life insurance policies with various insurance
-                      providers.......</p><a class="link-primary" href="#!">
-                      <svg class="bi bi-arrow-right text-primary" xmlns="http://www.w3.org/2000/svg" width="21"
-                        height="21" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-                        </path>
-                      </svg></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!-- end of .container-->
-
-    </section>
-    <!-- <section> close ============================-->
-    <!-- ============================================-->
-
-
-
-
-    <!-- ============================================-->
     <!-- <section> begin ============================-->
 
-    <!-- <section class="py-0">
-      <div class="container">
-        <div class="row align-items-center justify-content-xl-between">
-          <h2 class="text-light text-center my-5">Partners</h2>
-          <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-1.png"
-              height="40" alt="Partner" /></div>
-          <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-2.png"
-              height="40" alt="Partner" /></div>
-          <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-3.png"
-              height="40" alt="Partner" /></div>
-          <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-4.png"
-              height="40" alt="Partner" /></div>
-          <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-5.png"
-              height="40" alt="Partner" /></div>
-        </div>
-      </div>
-    </section> -->
 
-    <!-- <section> close ============================-->
-    <!-- ============================================-->
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
     <section id="contact">
 
       <div class="container">
         <div class="row">
-          <h2 class="text-light text-center mb-8">Contact Us</h2>
+          <h2 class="text-light mb-4">Contact Us</h2>
           <div class="col-12 col-lg-6 col-xl-7 mb-4 order-0 order-sm-0"><a class="logo-footer fs-7"
               href="index.html"><span class="text-primary fw-bolder">oo</span><span
                 class="fw-thin text-300">Forms</span></a>
-            <p class="text-light my-4"> <i class="fas fa-map-marker-alt me-3"></i><span class="text-light">1500 Treat
-                Ave, Suite 200 &nbsp;</span><a class="text-light" href="tel:+604-680-9785">+604-680-9785</a><br />San
-              Francisco, CA 94110</p>
+            <p class="text-light my-4"> <i class="fas fa-map-marker-alt me-3"></i><span class="text-light">2616 S Loop W Suite # 305i,  &nbsp;</span><a class="text-light" href="tel:+1 281 501 1925">+1 281 501 1925</a><br />Houston, TX 77054, United States</p>
             <p class="text-light"> <i class="fas fa-envelope me-3 text-primary"> </i><a
                 href="mailto:support@ooforms.com">support@ooforms.com </a></p>
             <p class="text-light"> <i class="fas fa-phone-alt me-3 text-primary"> </i><a
                 href="tel:1-800-800-2299">1-800-800-2299 (Support)</a></p>
           </div>
-          <div class="col-12 col-lg-6 col-xl-5">
+          <!-- <div class="col-12 col-lg-6 col-xl-5">
             <h3 class="text-200 my-4">Subscribe to newsletter </h3>
             <form class="position-relative">
               <div class="input-group-icon">
@@ -510,7 +395,7 @@
               </div>
               <button class="btn btn-primary btn-subscribe" type="submit">Subscribe now</button>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- end of .container-->
@@ -540,13 +425,9 @@
               <div class="pb-4">
                 <ul class="list-unstyled list-inline my-2">
                   <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i
-                        class="fab fa-facebook-square fa-2x social-icons"></i></a></li>
+                        class="fab fa-youtube-square fa-4x social-icons"></i></a></li>
                   <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i
-                        class="fab fa-instagram fa-2x social-icons"></i></a></li>
-                  <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i
-                        class="fab fa-twitter-square fa-2x social-icons"> </i></a></li>
-                  <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i
-                        class="fab fa-linkedin fa-2x social-icons"></i></a></li>
+                        class="fab fa-facebook fa-4x social-icons"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -578,7 +459,7 @@
     </section>
     <!-- <section> close ============================-->
     <!-- ============================================-->
-
+    OOForms.com, 
 
   </main>
   <!-- ===============================================-->
