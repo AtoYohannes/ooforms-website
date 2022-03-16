@@ -94,6 +94,7 @@
   </script>
   <script type="text/javascript">
     window.onload = function () {
+
       document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         emailjs.sendForm('service_turtqop', 'template_xvor8no', this)
@@ -109,17 +110,17 @@
     }
   </script>
 
+  <script>
+    function disableButton() {
+      var btn = document.getElementById('btn');
+      btn.disabled = true;
+      btn.innerText = 'Submitting ...'
+    }
+  </script>
 
 
-  <!-- =============================================== -->
-  <!--    Document Title-->
-  <!-- =============================================== -->
   <title>ooForms</title>
 
-
-  <!-- ===============================================-->
-  <!--    Favicons-->
-  <!-- ===============================================-->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
@@ -139,7 +140,6 @@
   <link href="assets/css/theme.css" rel="stylesheet" />
   <link href="assets/css/user.css" rel="stylesheet" />
 
-  <!-- Meta Pixel Code -->
   <script>
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
@@ -157,8 +157,7 @@
   </script>
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=355389093139935&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
-  <!-- Meta Pixel Code -->
+
   <script>
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
@@ -174,9 +173,13 @@
     fbq('init', '388369805984984');
     fbq('track', 'PageView');
   </script>
+
+
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=388369805984984&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
+
+
+
 
   <meta name="facebook-domain-verification" content="xtondceoydprpgfn3nangefbkwsisw" />
 </head>
@@ -235,7 +238,7 @@
             <div class="card card-bg shadow hero-header-form">
               <div class="card-body p-4 p-xl-6">
                 <h2 class="text-100 text-center">Contact Us</h2>
-                <form class="mb-3" id="contact-form">
+                <form class="mb-3" id="contact-form" onsubmit='disableButton()'>
                   <div class="form-floating mb-3">
                     <input required name="full_name" class="form-control input-box form-ensurance-header-control"
                       id="floatingName" type="text" placeholder="name" />
@@ -267,7 +270,7 @@
                     <label for="floatingTextarea">Comments</label>
                   </div>
                   <div class="col-12 d-grid">
-                    <button value="Send" class="btn btn-primary rounded-pill" type="submit">Learn more</button>
+                    <button value="Send" class="btn btn-primary rounded-pill" id='btn' type="submit">Learn more</button>
                   </div>
                 </form>
               </div>
