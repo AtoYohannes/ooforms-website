@@ -78,6 +78,37 @@
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="module">
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDG7qZbY84Hpl-GP-IN40lxnsZEmzwl_1Y",
+      authDomain: "ooforms-b3efb.firebaseapp.com",
+      projectId: "ooforms-b3efb",
+      storageBucket: "ooforms-b3efb.appspot.com",
+      messagingSenderId: "908943243425",
+      appId: "1:908943243425:web:9dbd7d64a7ad78e8e558e0",
+      measurementId: "G-63Q36TGE9C"
+
+    };
+    // Initialize Firebase
+
+    const app = initializeApp(firebaseConfig);
+
+    const analytics = getAnalytics(app);
+
+  </script>
   <script>
     function myFunction() {
       var x = document.getElementById("snackbar");
@@ -139,25 +170,6 @@
   <link href="vendors/prism/prism.css" rel="stylesheet">
   <link href="assets/css/theme.css" rel="stylesheet" />
   <link href="assets/css/user.css" rel="stylesheet" />
-
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '355389093139935');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=355389093139935&ev=PageView&noscript=1" /></noscript>
-
   <script>
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
