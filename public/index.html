@@ -133,9 +133,8 @@
   <script>
     function myFunction() {
       var x = document.getElementById("snackbar");
-
+      window.location.href = "#ThankYou";
       x.className = "show";
-
       setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
     } 
   </script>
@@ -156,6 +155,7 @@
               window.location.reload();
             }, 5000);
           }, function (error) {
+            window.location.href = "#ThankYou";
             console.log('FAILED...', error);
           });
       });
@@ -232,7 +232,6 @@
 
 
 <body>
-
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THFBNTZ" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -321,7 +320,9 @@
                     <label for="floatingTextarea">Comments</label>
                   </div>
                   <div class="col-12 d-grid">
-                    <button value="Send" class="btn btn-primary rounded-pill" id='btn' type="submit">Learn More</button>
+                    <button value="Send" class="btn btn-primary rounded-pill" id='btn' type="submit">Learn
+                      More</button>
+
                   </div>
                 </form>
               </div>
