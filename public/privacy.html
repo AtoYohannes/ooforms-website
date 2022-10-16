@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-63Q36TGE9C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-63Q36TGE9C');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DV8QVFSP3F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DV8QVFSP3F');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1038107013"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-1038107013'); </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #snackbar {
+            visibility: hidden;
+            min-width: 250px;
+            margin-left: -125px;
+            background-color: rgb(0, 202, 44);
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 20px;
+            position: fixed;
+            z-index: 1;
+            left: 30%;
+            bottom: 20%;
+            font-size: 25px;
+        }
+
+        #snackbar.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        #title {
+            color: #fff;
+        }
+
+        @-webkit-keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 20%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 20%;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeout {
+            from {
+                bottom: 20%;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                bottom: 20%;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDG7qZbY84Hpl-GP-IN40lxnsZEmzwl_1Y",
+            authDomain: "ooforms-b3efb.firebaseapp.com",
+            projectId: "ooforms-b3efb",
+            storageBucket: "ooforms-b3efb.appspot.com",
+            messagingSenderId: "908943243425",
+            appId: "1:908943243425:web:9dbd7d64a7ad78e8e558e0",
+            measurementId: "G-63Q36TGE9C"
+
+        };
+        // Initialize Firebase
+
+        const app = initializeApp(firebaseConfig);
+
+        const analytics = getAnalytics(app);
+
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            window.location.href = "#ThankYou";
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        } 
+    </script>
+    <script>
+        (function () {
+            emailjs.init("user_9VCXyJZWZxmprsvsAUX7B");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('service_turtqop', 'template_xvor8no', this)
+                    .then(function () {
+                        myFunction()
+                        setTimeout(function () {
+                            window.location.reload();
+                        }, 5000);
+                    }, function (error) {
+                        window.location.href = "#ThankYou";
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
+    <script>
+        function disableButton() {
+            var btn = document.getElementById('btn');
+            btn.disabled = true;
+            btn.innerText = 'Submitting ...'
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Do you need help with Carrier Packets? Let us help you. Even if you know how to fill out a carrier packet, we can help you. Contact us to learn how. 281-501-1925">
+    <meta name="application-name" content="ooForms.com || We can help Carriers sign up with new Brokers">
+    <meta name="keywords" content="Carrier Packets, how to fill out carrier packets, Trucking Business">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ooForms.com </title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link href="vendors/prism/prism.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link href="assets/css/user.css" rel="stylesheet" />
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '388369805984984');
+        fbq('track', 'PageView');
+    </script>
+
+
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=388369805984984&ev=PageView&noscript=1" /></noscript>
+    <meta name="facebook-domain-verification" content="xtondceoydprpgfn3nangefbkwsisw" />
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-THFBNTZ');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THFBNTZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <div id="snackbar">
+        😁 Thank you for reaching out, Our support team will be contacting you soon.
+    </div>
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand" href="">
+                    <img src="./assets/logos/ooforms transparent.png" width="110px" />
+
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse pt-4 pt-lg-0" id="navbarSupportedContent">
+                    <p class="mb-0 ms-auto text-light fs-0 fw-normal"><i class="fas fa-phone-alt me-2"></i>Call Us Now
+                        <a class="text-light" href="tel:+1 832 786 8522">+1 832 786 8522 </a>
+                    </p>
+                    <ul class="navbar-nav ms-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
+                        <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="col-12 px-10">
+            <h2 class="text-white"><strong>PRIVACY NOTICE</strong></h2>
+            <small>Last updated October 16, 2022</small>
+            <p>
+                This privacy notice for ooForms.com (doing business as Semegn Trucking LLC) ("Semegn Trucking LLC,"
+                "We," "us," or "our"), describes how and why we might collect, store, use,
+                and/or share ("process"') your information when you use our services ("Services"), such as when you:
+            <ul>
+
+                <li>
+                    Download and use our mobile application (Sign Up With Brokers - 00Forms), or any other application
+                    of ours that links to this privacy notice
+                </li>
+                <li>
+                    Engage with us in other related ways, including any sales, marketing, or events
+                </li>
+            </ul>
+
+            Questions or concerns? Reading this privacy notice will help you understand your privacy rights and
+            choices. If you do not agree with our policies and practices, please do not use our
+            Services. If you still have any questions or concerns, please contact us at support@ooforms.com.
+            </p>
+
+            <h3 class="text-white my-5">SUMMARY OF KEY POINTS</h3>
+
+            <p>
+                <b>What personal information do we process?</b> When you visit, use, or navigate our Services, we may
+                process personal information depending on how you interact with Semegn Trucking
+                LLC and the Services, the choices you make, and the products and features you use.
+
+            </p>
+            <p>
+                <b>Do we process any sensitive personal information?</b> We do not process sensitive personal
+                information.
+            </p>
+            <p>
+                <b>Do we receive any information from third parties?</b> We do not receive any information from third
+                parties.
+            </p>
+            <p>
+                <b>How do we process vour information?</b> We process vour information to provide, improve, and
+                administer our Services, communicate with vou. for security and fraud prevention, and to
+                comply with law. We mav also process our information for other purposes with vour consent. We process
+                our information onlv when we have a valid legal reason to do so.
+
+            </p>
+            <p>
+                <b>
+                    In what situations and with which parties do we share personal information?</b> We mav share
+                information in
+                specific situations and with specific third parties.
+            </p>
+            <p>
+                <b>
+                    How do we keep your information safe? </b> We have organizational and technical processes and
+                procedures in
+                place to protect our personal information. However, no electronic
+                transmission over the internet or information storage technology can be quaranteed to be 100% secure, so
+                we cannot promise or quarantee that hackers, cybercriminals, or other
+                unauthorized third parties will not be able to defeat our security and improperlv collect. access.
+                steal. or modifv vour information.
+            </p>
+            <p>
+                <b>What are your rights?</b>
+                Depending on where you are located geographically, the applicable privacy law may mean you have certain
+                rights regarding your personal information.
+            </p>
+            <h3 class="text-white my-5">1. WHAT INFORMATION DO WE COLLECT?</h3>
+            <h4><b class="text-white">Personal information you disclose to us</b></h4>
+            <p>
+                <b>
+                    In Short:
+                </b>
+                We collect personal information that you provide to us.
+
+            </p>
+
+            <p>
+                We collect personal information that you voluntarily provide to us when you express an interest in
+                obtaining information about us or our products and Services, when you participate in activities on the
+                Services, or otherwise when you contact us.
+            </p>
+            <p>
+            <ul>
+                <li>
+                    phone numbers
+                </li>
+                <li>
+                    email addresses
+                </li>
+                <li>
+                    contact preferences
+                </li>
+            </ul>
+            </p>
+
+            <p>
+                <b>Sensitive Information.</b> We do not process sensitive information.
+            </p>
+            <p>
+                All personal information that you provide to us must be true, complete, and accurate,
+                and you must notify us of any changes to such personal information.
+            </p>
+
+            <h4><b class="text-white">Information automatically collected</b></h4>
+
+            <p>
+                We automatically collect certain information when you visit, use, or navigate the Services. This
+                information does not reveal your specific identity (like your name or contact information) but may
+                include device and usage information, such as your IP address, browser and device characteristics,
+                operating system, language preferences, referring URLs, device name, country, location, information
+                about how and when you use our Services, and other technical information. This information is primarily
+                needed to maintain the security and operation of our Services, and for our internal analytics and
+                reporting purposes.
+            </p>
+
+            <p>
+                Like many businesses, we also collect information through cookies and similar technologies.
+            </p>
+
+            <p>
+                The information we collect includes:
+            <ul>
+                <li>
+                    Location Data. We collect location data such as information about your device's location, which can
+                    be either precise or imprecise. How much information we collect depends on the type and settings of
+                    the device you use to access the Services. For example, we may use GPS and other technologies to
+                    collect geolocation data that tells us your current location (based on your IP address). You can opt
+                    out of allowing us to collect this information either by refusing access to the information or by
+                    disabling your Location setting on your device. However, if you choose to opt out, you may not be
+                    able to use certain aspects of the Services.
+                </li>
+            </ul>
+            </p>
+
+            <h3 class="text-white my-5">2. HOW DO WE PROCESS YOUR INFORMATION?</h3>
+
+            <p>
+                <b>In Short:</b> We process your information to provide, improve, and administer our Services,
+                communicate with you, for security and fraud prevention, and to comply with law. We may also process
+                your information for other purposes with your consent.
+            </p>
+
+            <p>
+                We process your personal information for a variety of reasons, depending on how you interact with our
+                Services, including:
+            <ul>
+                <li>
+                    <b>To enable user-to-user communications.</b> We may process your information if you choose to use
+                    any of our offerings that allow for communication with another user.
+                </li>
+                <li>
+                    <b>To send you marketing and promotional communications.</b> We may process the personal information
+                    you send to us for our marketing purposes, if this is in accordance with your marketing preferences.
+                    You can opt out of our marketing emails at any time. For more information,
+                </li>
+            </ul>
+            </p>
+
+            <h3 class="text-white my-5">3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h3>
+            <p>
+                <b>
+                    In Short:
+                </b>
+                We may share information in specific situations described in this section and/or with the following
+                third parties.
+            </p>
+            <p>
+                We may need to share your personal information in the following situations:
+            </p>
+
+            <ul>
+                <li>
+                    <b>
+                        Business Transfers.
+                    </b>
+                    We may share or transfer your information in connection with, or during negotiations of, any merger,
+                    sale of company assets, financing, or acquisition of all or a portion of our business to another
+                    company.
+
+                </li>
+            </ul>
+
+            <h3 class="text-white my-5">4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</h3>
+            <p>
+                <b>
+                    In Short:
+                </b>
+                We may use cookies and other tracking technologies to collect and store your information.
+            </p>
+            <p>
+                We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store
+                information. Specific information about how we use such technologies and how you can refuse certain
+                cookies is set out in our Cookie Notice.
+            </p>
+
+            <h3 class="text-white my-5">5. HOW LONG DO WE KEEP YOUR INFORMATION?</h3>
+            <p>
+                <b>
+                    In Short:
+                </b>
+                We keep your information for as long as necessary to fulfill the purposes outlined in this privacy
+                notice unless otherwise required by law.
+            </p>
+
+            <p>
+                We will only keep your personal information for as long as it is necessary for the purposes set out in
+                this privacy notice, unless a longer retention period is required or permitted by law (such as tax,
+                accounting, or other legal requirements).
+            </p>
+            <p>
+                When we have no ongoing legitimate business need to process your personal information, we will either
+                delete or anonymize such information, or, if this is not possible (for example, because your personal
+                information has been stored in backup archives), then we will securely store your personal information
+                and isolate it from any further processing until deletion is possible.
+            </p>
+
+            <h3 class="text-white my-5">6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h3>
+            <p>
+                <b>In Short:</b>
+                We aim to protect your personal information through a system of organizational and technical security
+                measures.
+            </p>
+
+            <p>
+                We have implemented appropriate and reasonable technical and organizational security measures designed
+                to protect the security of any personal information we process. However, despite our safeguards and
+                efforts to secure your information, no electronic transmission over the Internet or information storage
+                technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers,
+                cybercriminals, or other unauthorized third parties will not be able to defeat our security and
+                improperly collect, access, steal, or modify your information. Although we will do our best to protect
+                your personal information, transmission of personal information to and from our Services is at your own
+                risk. You should only access the Services within a secure environment.
+            </p>
+
+            <h3 class="text-white my-5">6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h3>
+
+            <p>
+                <b>In Short:</b> We do not knowingly collect data from or market to children under 18 years of age.
+            </p>
+            <p>
+                We do not knowingly solicit data from or market to children under 18 years of age. By using the
+                Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor
+                and consent to such minor dependent’s use of the Services. If we learn that personal information from
+                users less than 18 years of age has been collected, we will deactivate the account and take reasonable
+                measures to promptly delete such data from our records. If you become aware of any data we may have
+                collected from children under age 18, please contact us at support@ooforms.com.
+
+            </p>
+
+            <h3 class="text-white my-5">7. DO WE MAKE UPDATES TO THIS NOTICE?</h3>
+            <p>
+                <b>In Short: </b>
+                Yes, we will update this notice as necessary to stay compliant with relevant laws.
+            </p>
+            <p>
+                We may update this privacy notice from time to time. The updated version will be indicated by an updated
+                "Revised" date and the updated version will be effective as soon as it is accessible. If we make
+                material changes to this privacy notice, we may notify you either by prominently posting a notice of
+                such changes or by directly sending you a notification. We encourage you to review this privacy notice
+                frequently to be informed of how we are protecting your information.
+            </p>
+
+            <h3 class="text-white my-5">8. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h3>
+            <p>
+                If you have questions or comments about this notice, you may email us at support@ooforms.com or by post
+                to:
+            </p>
+            <div>
+                ooForms.com
+            </div>
+            <div>
+                2616 S Loop W Suite # 305i
+            </div>
+            <div>
+                Houston, TX 77054
+            </div>
+            <div>
+                United States
+            </div>
+
+        </section>
+
+        <!-- <section> begin ============================-->
+
+
+        <section id="contact">
+
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-light mb-4">Contact Us</h2>
+                    <div class="col-12 col-lg-6 col-xl-7 mb-4 order-0 order-sm-0">
+                        <a class="logo-footer fs-7" href="">
+                            <img src="./assets/logos/ooforms transparent.png" width="40%" />
+                        </a>
+                        <p class="text-light my-4"> <i class="fas fa-map-marker-alt me-3"></i><span
+                                class="text-light">2616 S Loop W
+                                Suite # 305i, &nbsp;</span><a class="text-light" href="tel:+1 832 786 8522">+1 832 786
+                                8522</a><br />Houston, TX 77054, United States</p>
+                        <p class="text-light"> <i class="fas fa-envelope me-3 text-primary"> </i><a
+                                href="mailto:support@ooforms.com">support@ooforms.com </a></p>
+                        <p class="text-light"> <i class="fas fa-phone-alt me-3 text-primary"> </i><a
+                                href="tel:+1 832 786 8522">+1
+                                832 786 8522 (Support)</a></p>
+                    </div>
+                    <!-- <div class="col-12 col-lg-6 col-xl-5">
+            <h3 class="text-200 my-4">Subscribe to newsletter </h3>
+            <form class="position-relative">
+              <div class="input-group-icon">
+                <input class="form-control form-ensurance-control" type="email" placeholder="Enter your email "
+                  aria-label="email" />
+              </div>
+              <button class="btn btn-primary btn-subscribe" type="submit">Subscribe now</button>
+            </form>
+          </div> -->
+                </div>
+            </div>
+            <!-- end of .container-->
+
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+
+
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="py-0">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-md-flex justify-content-between pb-1 pt-4">
+                            <div class="pb-4">
+                                <ul
+                                    class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
+                                    <li><a class="widget-list-link fs-ms" href="#">Home</a></li>
+                                    <li class="ms-4"><a class="widget-list-link fs-ms" href="#services">Services</a>
+                                    </li>
+                                    <li class="ms-4"><a class="widget-list-link fs-ms"
+                                            href="#testimonials">Testimonials</a></li>
+                                </ul>
+                            </div>
+                            <div class="pb-4">
+                                <ul class="list-unstyled list-inline my-2">
+                                    <li class="list-inline-item"><a class="text-decoration-none"
+                                            href="https://www.youtube.com/channel/UCMnlG3TME9Tu1CU1QspopnQ"><i
+                                                class="fab fa-youtube-square fa-4x social-icons"></i></a></li>
+                                    <li class="list-inline-item"><a class="text-decoration-none"
+                                            href="https://www.facebook.com/ooforms"><i
+                                                class="fab fa-facebook-square fa-4x social-icons"></i></a></li>
+                                    <li class="list-inline-item"><a class="text-decoration-none"
+                                            href="https://www.instagram.com/ooforms/?utm_medium=copy_link"><i
+                                                class="fab fa-instagram-square fa-4x social-icons"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .container-->
+
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+
+
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="py-0 bg-black">
+
+            <div class="container">
+                <div class="row justify-content-md-between justify-content-evenly py-4">
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
+                        <p class="fs--1 my-2 fw-light text-200">All rights Reserved &copy; ooForms, 2022</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .container-->
+
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/popper/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/anchorjs/anchor.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="vendors/lodash/lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/prism/prism.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+</body>
+
+</html>
